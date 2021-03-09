@@ -1,6 +1,10 @@
 package LinkList;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class LinkNode {
+
     /**
      * 方法一：正常思路
      * @param nums
@@ -30,5 +34,17 @@ public class LinkNode {
             }
         }
         return 0;
+    }
+
+    public int breakfastNumber(int[] staple, int[] drinks, int x) {
+        Set<Integer> stapleSet=new  HashSet<Integer>();
+        Set<Integer> drinkSet=new  HashSet<Integer>();
+        for(int i=0;i<staple.length;i++){
+            stapleSet.add(staple[i]);
+        }
+        for(int i=0;i<drinks.length;i++){
+            drinkSet.add(drinks[i]);
+        }
+        return stapleSet.size()*drinkSet.size();
     }
 }

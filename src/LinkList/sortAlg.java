@@ -45,6 +45,34 @@ public class sortAlg {
      * 插入排序
      */
     public void insertSort(int[] array){
+        int size=array.length;
+        for (int i = 0; i < size; i++) {
+            for (int j = i; j < size; j++) {
+                if (array[j]<array[i]){
+                    
+                }
+            }
 
+        }
+    }
+    /**
+     * 快速排序核心代码
+     */
+    public void quickSort(int[] array,int left,int right){
+        int base=array[left];
+        int i=left,j=right;
+        while (i!=j){
+            if (array[i]<base&&i<j){
+                i++;
+            }
+            if (array[j]>base&&i<j){
+                j--;
+            }
+            if (i<j){
+                int tmp=array[i];
+                array[i]=base;
+                array[left]=tmp;
+            }
+        }
     }
 }

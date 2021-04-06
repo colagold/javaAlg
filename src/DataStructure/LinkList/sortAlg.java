@@ -1,4 +1,4 @@
-package LinkList;
+package DataStructure.LinkList;
 
 /**
  * 经典排序算法

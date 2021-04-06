@@ -1,4 +1,4 @@
-package LinkList;
+package DataStructure.LinkList;
 
 import java.util.HashSet;
 import java.util.Set;

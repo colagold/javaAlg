@@ -1,6 +1,3 @@
-import LinkList.sortAlg;
-
-import java.awt.*;
 import java.io.*;
 
 public class mainTest {

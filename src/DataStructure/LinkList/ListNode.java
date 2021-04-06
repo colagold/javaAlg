@@ -1,4 +1,4 @@
-package LinkList;
+package DataStructure.LinkList;
 
 public class ListNode {
     int val;
